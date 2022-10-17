@@ -11,7 +11,7 @@
             var horas = document.getElementById("horas").value;
             var minutos = document.getElementById("minutos").value;
             var segundos = document.getElementById("segundos").value;
-            var resultado = parseInt(horas) + parseInt(minutos) + parseInt(segundos);
+            var resultado = parseInt(horas)*3600 + parseInt(minutos)*60 + parseInt(segundos);
             
             document.getElementById("mensaje").innerHTML = "Han pasado: " + resultado + "segundos";
              
